@@ -1,6 +1,6 @@
 const targz = require('tar.gz2');
 
-targz().extract('data2.tar.gz', 'data')
+targz().extract(process.argv[2], 'data')
     .then(console.log('extract finished!!'))
     .catch((err) => console.error('error callback fired: ', err));
 

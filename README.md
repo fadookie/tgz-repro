@@ -11,7 +11,7 @@ npm install && npm test
 
 Expected: Promise only resolves when extract operation is complete, or rejects on error.
 
-Actual: Promise resolves, then error callback fires:
+Actual: Promise resolves, then error callback fires (because it's a `tar.bz2` file):
 
 ```
 $ npm test
@@ -30,3 +30,11 @@ error callback fired:  { Error: incorrect header check
   errno: -3,
   code: 'Z_DATA_ERROR' }
 ```
+
+## Additional repro case
+
+```
+npm run test-permission
+```
+
+This can be used to reproduce a permissions error when an archive operation would otherwise overwrite a file.

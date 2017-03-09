@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "test": "node test.js"
+    "test": "node test.js 'data.tar.bz2'",
+    "test-permission": "node test.js 'data.tar.gz'; node test.js 'data.tar.gz'"
   },
   "devDependencies": {
     "tar.gz2": "1.0.0"
