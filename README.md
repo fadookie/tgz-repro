@@ -3,6 +3,8 @@
 Issue: https://github.com/alanhoff/node-tar.gz/issues/44
 
 ## Running the repro case
+Optional: `nvm use` (I tested this on node v6.9.4). Then:
+
 ```
 npm install && npm test
 ```
