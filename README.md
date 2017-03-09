@@ -17,7 +17,7 @@ Actual: Promise resolves, then error callback fires (because it's a `tar.bz2` fi
 $ npm test
 
 > tgz-repro@0.0.0 test /Users/eliot/Dev/pear/tgz-repro
-> node test.js
+> node test.js 'data.tar.bz2'
 
 extract finished!!
 done?
